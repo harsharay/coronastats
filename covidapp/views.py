@@ -2,10 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import requests
 from bs4 import BeautifulSoup
-from matplotlib import pyplot as plt
-from matplotlib import pylab
-from pylab import *
-import PIL, PIL.Image
+
 
 
 # Create your views here.
