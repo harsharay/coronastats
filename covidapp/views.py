@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import requests
 from bs4 import BeautifulSoup
+from matplotlib import pyplot as plt
 
 # Create your views here.
 def home(request):
@@ -24,4 +25,11 @@ def stats(request):
     Recovered_cases = numbers[3]
     Deaths = numbers[4]
 
-    return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths})
+    for i in range(0,len(numbers)):
+        numbers[i] = int(numbers[i])
+
+    details = ['Confirmed_cases','Hospitalized_cases','Intensive_care_cases','Recovered_cases','Deaths']
+
+    main_plot = plt.plot(details,numbers)
+
+    return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths,main_plot.show})
