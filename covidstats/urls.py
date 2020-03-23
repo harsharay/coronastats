@@ -20,5 +20,6 @@ from covidapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
-    path('stats/', views.stats, name='stats')
+    path('stats/', views.stats, name='stats'),
+    path('intstats/',views.intstats,name='intstats'),
 ]
