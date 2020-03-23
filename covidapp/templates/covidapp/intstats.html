@@ -1,10 +1,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+<div class="container text-center">
+  <br>
+  <a href="{%url 'home'%}" class="btn btn-primary">Click to go home</a>
+  <a href="{%url 'stats'%}" class="btn btn-warning">Click to view the stats of India</a>
+</div>
 <div>
+<a href='{%url 'intstats'%}' class="btn btn-info">Stats refresh</a>
+<br>
+<br>
 <h2>China</h2>
-<h5>Total Confirmed cases in China: {{Confirmed_China}}</h5>
-<h5>Total  deaths in China: {{Deaths_China}}</h5>
-<h5>Total Recovered in China: {{Recovered_China}}</h5>
-<a href='{%url 'intstats'%}' class="btn btn-success">China stats refresh</a>
+<h5><img src="https://toppng.com/uploads/preview/8-bit-caution-symbol-pixel-art-11563001122rkmsc6xjgs.png" width='20'></img> Total Confirmed cases in China: {{Confirmed_China}}</h5>
+<h5><img src="https://i.ya-webdesign.com/images/transparent-death-8-bit-9.png" width="20"></img> Total  deaths in China: {{Deaths_China}}</h5>
+<h5><img src="https://data.whicdn.com/images/81085962/original.png" width='20'></img> Total Recovered in China: {{Recovered_China}}</h5>
 
 </div>
