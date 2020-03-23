@@ -3,6 +3,7 @@ from django.http import HttpResponse
 import requests
 from bs4 import BeautifulSoup
 import json
+import pandas as pd
 
 
 
@@ -11,28 +12,30 @@ def home(request):
     return render(request,'covidapp/home.html')
 
 def stats(request):
-    url = 'https://www.covidout.in'
-    page = requests.get(url)
-    soup_obj = BeautifulSoup(page.content,'html.parser')
-    output = soup_obj.findAll('h2',{'class':'case'})
+    #url = 'https://www.covidout.in'
+    #page = requests.get(url)
+    #soup_obj = BeautifulSoup(page.content,'html.parser')
+    #output = soup_obj.findAll('h2',{'class':'case'})
 
-    numbers = []
+    #numbers = []
 
-    for i in output:
-        numbers.append(i.text)
+    #for i in output:
+    #    numbers.append(i.text)
 
-    Confirmed_cases = numbers[0]
-    Hospitalized_cases = numbers[1]
-    Intensive_care_cases = numbers[2]
-    Recovered_cases = numbers[3]
-    Deaths = numbers[4]
+    #Confirmed_cases = numbers[0]
+    #Hospitalized_cases = numbers[1]
+    #Intensive_care_cases = numbers[2]
+    #Recovered_cases = numbers[3]
+    #Deaths = numbers[4]
 
-    for i in range(0,len(numbers)):
-        numbers[i] = int(numbers[i])
+    #for i in range(0,len(numbers)):
+    #   numbers[i] = int(numbers[i])
 
-    return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths})
+    #return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths})
+    return render(request, 'covidapp/stats.html')
 
-def instats(request):
+
+def intstats(request):
     url = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats"
     params = {'country':'China'}
     headers = {
@@ -64,4 +67,4 @@ def instats(request):
     Total_recovered_china = sum(Recovered_china)
 
     China_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
-    return render(request,{'China_df':China_df})
+    return render(request,'covidapp/intstats.html',{'Confirmed_China':Total_confirmed_china,'Deaths_China':Total_deaths_china,'Recovered_China':Total_recovered_china})
