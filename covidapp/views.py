@@ -3,6 +3,10 @@ from django.http import HttpResponse
 import requests
 from bs4 import BeautifulSoup
 from matplotlib import pyplot as plt
+from matplotlib import pylab
+from pylab import *
+import PIL, PIL.Image
+
 
 # Create your views here.
 def home(request):
@@ -27,9 +31,7 @@ def stats(request):
 
     for i in range(0,len(numbers)):
         numbers[i] = int(numbers[i])
-
+        
     details = ['Confirmed_cases','Hospitalized_cases','Intensive_care_cases','Recovered_cases','Deaths']
 
-    main_plot = plt.plot(details,numbers)
-
-    return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths,main_plot.show})
+    return render(request,'covidapp/stats.html',{'Confirmed_cases':Confirmed_cases,'Hospitalized_cases':Hospitalized_cases,'Intensive_care_cases':Intensive_care_cases,'Recovered_cases':Recovered_cases,'Deaths':Deaths})
