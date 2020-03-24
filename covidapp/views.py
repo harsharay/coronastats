@@ -12,70 +12,47 @@ def home(request):
     return render(request,'covidapp/home.html')
 
 def stats(request):
-    url1 = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats"
-    params1 = {'country':'India'}
+    url1='https://covid-193.p.rapidapi.com/statistics'
+    pmtr1 = {'country':'India'}
     headers1 = {
-    'x-rapidapi-host': "covid-19-coronavirus-statistics.p.rapidapi.com",
+    'x-rapidapi-host': "covid-193.p.rapidapi.com",
     'x-rapidapi-key': "2a3b15c6f1mshe3a9940adbcd05dp19ab89jsna95e11818f1f"
     }
-    response = requests.get(url1, params=params1, headers=headers1)
-    test1 = response.json()
-    final1 = test1['data']['covid19Stats']
-    Provinces_india = []
-    for i in final1:
-        Provinces_india.append(i['province'])
 
+    response1 = requests.get(url1,params=pmtr1,headers=headers1)
+    modified_response1 = response1.json()
+    dict_response1 = modified_response1['response']
+    final_response_india = dict_response1[0]
 
-    Confirmed_India = []
-    for i in final1:
-        Confirmed_India.append(i['confirmed'])
-    Total_confirmed_India = sum(Confirmed_India)
+    Deaths_India=final_response_india['deaths']
 
+    Cases_India = final_response_india['cases']
 
-    Deaths_India = []
-    for i in final1:
-        Deaths_India.append(i['deaths'])
-    Total_Deaths_India = sum(Deaths_India)
+    Recovered_India =Cases_India['recovered']
 
-    Recovered_India = []
-    for i in final1:
-        Recovered_India.append(i['recovered'])
-    Total_recovered_India = sum(Recovered_India)
 
     #India_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
-    return render(request,'covidapp/stats.html',{'Confirmed_India':Total_confirmed_India,'Deaths_India':Total_Deaths_India,'Recovered_India':Total_recovered_India})
+    return render(request,'covidapp/stats.html',{'Total_Cases_India':Cases_India,'Deaths_India':Deaths_India,'Recovered_India':Recovered_India})
 
 
 def intstats(request):
-    url = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats"
-    params = {'country':'China'}
+    url='https://covid-193.p.rapidapi.com/statistics'
+    pmtr = {'country':'China'}
     headers = {
-    'x-rapidapi-host': "covid-19-coronavirus-statistics.p.rapidapi.com",
+    'x-rapidapi-host': "covid-193.p.rapidapi.com",
     'x-rapidapi-key': "2a3b15c6f1mshe3a9940adbcd05dp19ab89jsna95e11818f1f"
     }
-    response = requests.get(url, params=params, headers=headers)
-    test = response.json()
-    final = test['data']['covid19Stats']
-    Provinces_china = []
-    for i in final:
-        Provinces_china.append(i['province'])
 
+    response = requests.get(url,params=pmtr,headers=headers)
+    modified_response = response.json()
+    dict_response = modified_response['response']
+    final_response_china = dict_response[0]
 
-    Confirmed_china = []
-    for i in final:
-        Confirmed_china.append(i['confirmed'])
-    Total_confirmed_china = sum(Confirmed_china)
+    Deaths_china=final_response_china['deaths']
 
+    Cases_China = final_response_china['cases']
 
-    Deaths_china = []
-    for i in final:
-        Deaths_china.append(i['deaths'])
-    Total_deaths_china = sum(Deaths_china)
-
-    Recovered_china = []
-    for i in final:
-        Recovered_china.append(i['recovered'])
-    Total_recovered_china = sum(Recovered_china)
+    Recovered_China =Cases_China['recovered']
 
     #China_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
-    return render(request,'covidapp/intstats.html',{'Confirmed_China':Total_confirmed_china,'Deaths_China':Total_deaths_china,'Recovered_China':Total_recovered_china})
+    return render(request,'covidapp/intstats.html',{'Total_cases_China':Cases_China,'Deaths_China':Deaths_china,'Recovered_china':Recovered_China})
