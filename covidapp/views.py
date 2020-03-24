@@ -32,7 +32,7 @@ def stats(request):
 
 
     #India_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
-    return render(request,'covidapp/stats.html',{'Total_Cases_India':Cases_India,'Deaths_India':Deaths_India,'Recovered_India':Recovered_India})
+    return render(request,'covidapp/stats.html',{'Total_Cases_India':Cases_India['total'],'Active_cases':Cases_India['active'],'Deaths_India':Deaths_India['total'],'New_deaths_india_today':Deaths_India['new'],'Recovered_India':Recovered_India})
 
 
 def intstats(request):
@@ -55,4 +55,4 @@ def intstats(request):
     Recovered_China =Cases_China['recovered']
 
     #China_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
-    return render(request,'covidapp/intstats.html',{'Total_cases_China':Cases_China,'Deaths_China':Deaths_china,'Recovered_china':Recovered_China})
+    return render(request,'covidapp/intstats.html',{'Total_cases_China':Cases_China['total'],'Active_cases':Cases_China['active'],'Critical_cases':Cases_China['critical'],'new_cases_china':Cases_China['new'],'New_deaths_China_today':Deaths_china['new'],'Total_deaths_China':Deaths_china['total'],'Recovered_china':Recovered_China})
