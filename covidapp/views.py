@@ -77,5 +77,5 @@ def intstats(request):
         Recovered_china.append(i['recovered'])
     Total_recovered_china = sum(Recovered_china)
 
-    China_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
+    #China_df = pd.DataFrame(list(zip(Provinces_china,Confirmed_china,Deaths_china,Recovered_china)))
     return render(request,'covidapp/intstats.html',{'Confirmed_China':Total_confirmed_china,'Deaths_China':Total_deaths_china,'Recovered_China':Total_recovered_china})
