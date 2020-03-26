@@ -107,6 +107,7 @@ def statesdata(request):
     stats_df = pd.DataFrame(list(zip(states,confirmed_cases,recovered_cases,deaths,active)))
 
     stats_df.columns = ['states','confirmed','recovered','deaths','active']
+
     Maharashtra = stats_df.iloc[0]
     Kerala = stats_df.iloc[1]
     Karnataka = stats_df.iloc[2]
