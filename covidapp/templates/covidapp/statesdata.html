@@ -5,232 +5,264 @@
 <br>
 <div class="card-columns">
 <div class="container text-center">
-<div class="card border-danger mb-3" style="width: 18rem;">
-  <h3 class="card-body text-info "><b>1.Maharashtra</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Maharashtra_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Maharashtra_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Maharashtra_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Maharashtra_active}}</h5>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>1.{{state_1_name}}</i></b></h2>
+  <h3 class="card-body text-dark">Confirmed: <b>{{state_1_c}}</b></h3>
+  <h3 class="card-body text-dark">Recovered: <b>{{state_1_r}}</b></h3>
+  <h3 class="card-body text-dark">Death: <b>{{state_1_d}}</b></h3>
+  <h3 class="card-body text-dark">Active:<b>{{state_1_a}}</b></h3>
 </div>
-<div class='card border-danger mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>2.Kerala</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Kerala_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Kerala_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Kerala_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Kerala_active}}</h5>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>2.{{state_2_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_2_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_2_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_2_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_2_a}}</b></h4>
 </div>
-<div class='card border-danger mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>3.Karnataka</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Karnataka_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Karnataka_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Karnataka_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Karnataka_active}}</h5>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>3.{{state_3_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_3_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_3_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_3_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_3_a}}</b></h4>
 </div>
-<div class='card border-warning mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>4.Telangana</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Telangana_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Telangana_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Telangana_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Telangana_active}}</h5>
-</div> <div class='card border-warning mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>5.Gujarat</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Gujarat_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Gujarat_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Gujarat_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Gujarat_ac}}</h5>
-</div> <div class='card border-warning mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>6.Uttar Pradesh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Uttar_Pradesh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Uttar_Pradesh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Uttar_Pradesh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Uttar_Pradesh_active}}</h5>
-</div> <div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>7.Rajasthan</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Rajasthan_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Rajasthan_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Rajasthan_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Rajasthan_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>8.Delhi</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Delhi_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Delhi_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Delhi_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Delhi_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>9.Haryana</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Haryana_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Haryana_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Haryana_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Haryana_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>10.Punjab</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Punjab_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Punjab_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Punjab_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Punjab_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>11.Tamil Nadu</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Tamil_Nadu_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Tamil_Nadu_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Tamil_Nadu_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Tamil_Nadu_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>12.Madhya Pradesh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Madhya_Pradesh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Madhya_Pradesh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Madhya_Pradesh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Madhya_Pradesh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>13.Ladakh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Ladakh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Ladakh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Ladakh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Ladakh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>14.J & K</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Jammu_and_Kashmir_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Jammu_and_Kashmir_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Jammu_and_Kashmir_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Jammu_and_Kashmir_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>15.AndhraPradesh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Andhra_Pradesh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Andhra_Pradesh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Andhra_Pradesh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Andhra_Pradesh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>16.West Bengal</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{West_Bengal_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{West_Bengal_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{West_Bengal_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{West_Bengal_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>17.Chandigarh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Chandigarh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Chandigarh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Chandigarh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Chandigarh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>18.Uttarakand</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Uttarakand_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Uttarakand_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Uttarakand_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Uttarakand_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>19.Bihar</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Bihar_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Bihar_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Bihar_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Bihar_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>20.Himachal</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Himachal_Pradesh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Himachal_Pradesh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Himachal_Pradesh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Himachal_Pradesh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>21.Chhattisgarh</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Chhattisgarh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Chhattisgarh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Chhattisgarh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Chhattisgarh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>22.Goa</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Goa_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Goa_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Goa_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Goa_active}}</h5>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>4.{{state_4_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_4_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_4_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_4_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_4_a}}</b></h4>
 </div>
-  <div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>23.Odisha</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Odisha_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Odisha_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Odisha_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Odisha_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>24.Puducherry</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Puducherry_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Puducherry_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Puducherry_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Puducherry_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>25.Manipur</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Manipur_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Manipur_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Manipur_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Manipur_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>26.Mizoram</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Mizoram_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Mizoram_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Mizoram_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Mizoram_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>27.Andaman & Nicobar</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Andaman_and_Nicobar_Islands_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Andaman_and_Nicobar_Islands_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Andaman_and_Nicobar_Islands_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Andaman_and_Nicobar_Islands_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>28.Assam</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Assam_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Assam_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Assam_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Assam_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>29.Meghalaya</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Meghalaya_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Meghalaya_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Meghalaya_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Meghalaya_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>30.Tripura</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Tripura_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Tripura_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Tripura_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Tripura_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>31.Arunachal</b>
-  <h5 class="card-body text-info">Confirmed cases:{{Arunachal_Pradesh_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Arunachal_Pradesh_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Arunachal_Pradesh_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Arunachal_Pradesh_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>32.Jharkand</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Jharkand_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Jharkand_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Jharkand_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Jharkand_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>33.Nagaland</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Nagaland_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Nagaland_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Nagaland_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Nagaland_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>34.Sikkim</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Sikkim_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Sikkim_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Sikkim_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Sikkim_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>35.Dadra & Nagar</b>
-  <h5 class="card-body text-info">Confirmed cases:{{Dadra_and_Nagar_Haveli_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Dadra_and_Nagar_Haveli_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Dadra_and_Nagar_Haveli_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Dadra_and_Nagar_Haveli_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>36.Damana and diu</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Damana_and_diu_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Damana_and_diu_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Damana_and_diu_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Damana_and_diu_active}}</h5>
-</div><div class='card border-secondary mb-3' style="width: 18rem;">
-  <h3 class="card-body text-info"><b>37.Lakshadweep</b></h3>
-  <h5 class="card-body text-info">Confirmed cases:{{Lakshadweep_conf}}</h5>
-  <h5 class="card-body text-info">Recovered cases:{{Lakshadweep_recov}}</h5>
-  <h5 class="card-body text-info">Deaths:{{Lakshadweep_deaths}}</h5>
-  <h5 class="card-body text-info">Active cases:{{Lakshadweep_active}}</h5>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>5.{{state_5_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_5_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_5_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_5_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_5_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>6.{{state_6_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_6_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_6_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_6_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_6_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>7.{{state_7_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_7_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_7_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_7_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_7_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>8.{{state_8_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_8_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_8_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_8d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_8_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>9.{{state_9_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_9_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_9_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_9_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_9_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>10.{{state_10_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_10_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_10_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_10_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_10_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>11.{{state_11_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_11_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_11_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_11_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_11_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>12.{{state_12_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_12_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_12_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_12_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_12_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>13.{{state_13_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_13_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_13_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_13_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_13_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>14.{{state_14_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_14_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_14_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_14_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_14_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>15.{{state_15_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_15_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_15_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_15_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_15_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>16.{{state_16_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_16_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_16_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_16_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_16_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>17.{{state_17_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_17_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_17_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_17_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_17_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>18.{{state_18_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_18_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_18_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_18_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_18_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>19.{{state_19_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_19_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_19_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_19_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_19_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>20.{{state_20_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_20_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_20_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_20_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_20_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>21.{{state_21_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_21_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_21_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_21_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_21_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>22.{{state_22_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_22_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_22_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_22_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_22_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>23.{{state_23_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_23_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_23_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_23_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_23_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>24.{{state_24_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_24_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_24_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_24_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_24_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>25.{{state_25_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_25_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_25_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_25_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_25_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>26.{{state_26_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_26_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_26_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_26_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_26_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>27.{{state_27_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_27_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_27_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_27_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_27_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>28.{{state_28_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_28_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_28_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_28_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_28_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>29.{{state_29_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_29_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_29_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_29d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_29_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>30.{{state_30_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_30_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_30_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_30_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_30_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>31.{{state_31_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_31_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_31_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_31_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_31_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>32.{{state_32_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_32_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_32_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_32_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_32_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>33.{{state_33_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_33_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_33_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_33_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_33_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>34.{{state_34_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_34_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_34_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_34_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_34_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>35.{{state_35_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_35_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_35_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_35_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_35_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>36.{{state_36_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_36_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_36_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_36_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_36_a}}</b></h4>
+</div>
+<div class="card bg-light mb-3" style="width: 18rem;">
+  <h2 class="card-body text-info "><b><i>37.{{state_37_name}}</i></b></h2>
+  <h4 class="card-body text-dark ">Confirmed: <b>{{state_37_c}}</b></h4>
+  <h4 class="card-body text-dark ">Recovered: <b>{{state_37_r}}</b></h4>
+  <h4 class="card-body text-dark ">Death: <b>{{state_37_d}}</b></h4>
+  <h4 class="card-body text-dark ">Active:<b>{{state_37_a}}</b></h4>
 </div>
 </div>
 </div>
